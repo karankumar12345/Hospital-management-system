@@ -40,7 +40,7 @@ const ContactUsPage = () => {
 
 
   return (
-    <Box py={4} sx={{ backgroundColor: '#ced3db' }}>
+    <Box py={4} sx={{ backgroundColor: '#ced3db',color:'red' }}>
       <Container maxWidth="md">
         <Typography variant="h4" align="center" gutterBottom>
           Contact Us
@@ -50,16 +50,16 @@ const ContactUsPage = () => {
           <Grid item xs={12} sm={6}>
             <Box display="flex" alignItems="center">
               <Email sx={{ mr: 1 }} />
-              <Typography variant="body1">
-                Email: bastolaronak12@gmail.com
+              <Typography variant="body1"  sx={{ color:'red' }}>
+                Email: karankumar2004122@gmail.com
               </Typography>
             </Box>
           </Grid>
           <Grid item xs={12} sm={6}>
             <Box display="flex" alignItems="center">
               <Phone sx={{ mr: 1 }} />
-              <Typography variant="body1">
-                Phone: +977-9862164447
+              <Typography variant="body1" sx={{ color:'red' }}>
+                Phone: +91 7004686679
               </Typography>
             </Box>
           </Grid>
@@ -73,16 +73,16 @@ const ContactUsPage = () => {
             <Grid item xs={12} sm={6}>
               <Box display="flex" alignItems="center">
                 <LocationOn sx={{ mr: 1 }} />
-                <Typography variant="body1">
-                  Kathmandu
+                <Typography variant="body1" sx={{ color:'red' }} >
+                  Greater oida
                 </Typography>
               </Box>
             </Grid>
             <Grid item xs={12} sm={6}>
               <Box display="flex" alignItems="center">
                 <LocationOn sx={{ mr: 1 }} />
-                <Typography variant="body1">
-                Baneshwor
+                <Typography variant="body1" sx={{ color:'red' }} >
+                Pari chowk
                 </Typography>
               </Box>
             </Grid>

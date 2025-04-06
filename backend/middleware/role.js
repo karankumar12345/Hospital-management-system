@@ -1,5 +1,7 @@
 const role_check = async(req, res, next)=>{
     admin_role = req.is_admin;
+    console.log("4")
+    console.log(admin_role)
     if(admin_role == false ){
         return res.status(401).json({message: "un-authorized"});
     }

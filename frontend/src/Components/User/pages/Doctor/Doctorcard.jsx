@@ -9,7 +9,8 @@ import {Link} from 'react-router-dom'
 
 export default function DoctorCard({item}) {
     const {expertise,name,image,_id}=item
-    console.log(item)
+
+    console.log(image)
     
   return (
     <Card sx={{ maxWidth: 300,
@@ -19,7 +20,7 @@ export default function DoctorCard({item}) {
         backgroundPosition: "center"
          }}
          height="200"
-        image={image}
+        image={item.image}
         title={name}
         component='img'
       />
