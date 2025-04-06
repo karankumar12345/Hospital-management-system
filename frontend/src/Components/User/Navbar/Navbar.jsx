@@ -185,18 +185,7 @@ const Navbar = () => {
                     alignContent:"center"
                   }}>
 
-                   <div>
-      <Button
-        id="basic-button"
-        aria-controls={open ? 'basic-menu' : undefined}
-        aria-haspopup="true"
-        aria-expanded={open ? 'true' : undefined}
-        onClick={handleClick}
-      >
-       login
-      </Button>
-   
-    </div>
+    
                     <Button
                       variant="outlined"
                       color="secondary"
@@ -204,7 +193,7 @@ const Navbar = () => {
                       component={Link}
                       to="/login"
                     >
-                      Sign Up
+                      Login
                     </Button>
                     <Button
                       variant="outlined"
