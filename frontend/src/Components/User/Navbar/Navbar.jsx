@@ -195,20 +195,17 @@ const Navbar = () => {
       >
        login
       </Button>
-      <Menu
-        id="basic-menu"
-        anchorEl={anchorEl}
-        open={open}
-        onClose={handleClose}
-        MenuListProps={{
-          'aria-labelledby': 'basic-button',
-        }}
-      >
-        <MenuItem as={NavLink} to="/login" onClick={handleClose}>login as user</MenuItem>
-        <MenuItem  as={NavLink} to="/doctorlogin" onClick={handleClose}>login as doctor</MenuItem>
-       
-      </Menu>
+   
     </div>
+                    <Button
+                      variant="outlined"
+                      color="secondary"
+                      sx={{ marginLeft: "20px" }}
+                      component={Link}
+                      to="/login"
+                    >
+                      Sign Up
+                    </Button>
                     <Button
                       variant="outlined"
                       color="secondary"
