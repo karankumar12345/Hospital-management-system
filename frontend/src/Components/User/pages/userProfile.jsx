@@ -33,7 +33,7 @@ const UserProfile = () => {
 
   const fetch_user = async () => {
     try {
-      const response = await axios.get('http://localhost:8080/userdetails', {
+      const response = await axios.get('https://hospital-management-system-1-lrix.onrender.com/userdetails', {
         headers: {
           authorization: localStorage.getItem('jwt'),
         },
@@ -65,7 +65,7 @@ const UserProfile = () => {
   const handleSaveClick = async () => {
     try {
       const response = await axios.put(
-        'http://localhost:8080/updatepatient',
+        'https://hospital-management-system-1-lrix.onrender.com/updatepatient',
         {
           username: userName,
           email: userEmail,

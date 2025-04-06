@@ -7,7 +7,7 @@ const DoctorProfile = () => {
 
   const fetchDoctor = async () => {
     try {
-      const response = await axios.get('http://localhost:8080/doctor-single', {
+      const response = await axios.get('https://hospital-management-system-1-lrix.onrender.com/doctor-single', {
         headers: {
           authorization: localStorage.getItem('jwt'),
         },

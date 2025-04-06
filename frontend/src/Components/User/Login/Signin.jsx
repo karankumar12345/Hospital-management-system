@@ -47,7 +47,7 @@ function SignUpForm() {
     console.log(values)
     try {
       const response = await axios.post(
-        "http://localhost:8080/signup",
+        "https://hospital-management-system-1-lrix.onrender.com/signup",
 
         values
       );

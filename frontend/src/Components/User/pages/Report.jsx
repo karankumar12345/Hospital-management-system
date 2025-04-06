@@ -23,7 +23,7 @@ const Report = () => {
   const doctorDetails = async (id) => {
     try {
       const { data } = await axios.get(
-        `http://localhost:8080/patient/single-appointment/${id}`,
+        `https://hospital-management-system-1-lrix.onrender.com/patient/single-appointment/${id}`,
         {
           headers: {
             authorization: token,
